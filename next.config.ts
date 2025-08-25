@@ -1,6 +1,6 @@
 // next.config.ts
 import type { NextConfig } from "next";
-import type { RuleSetRule } from "webpack"
+import type { RuleSetRule } from "webpack";
 
 /** Тайпгард: является ли правило RuleSetRule с полем test */
 function isRuleSetRule(value: unknown): value is RuleSetRule {
