@@ -5,80 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee1aa780-643a-44e9-8565-2b139ec0f0a6" name="Changes" comment="feat: create project">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Cover_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/FONTSFREE-NET-CLASHDISPLAY-VARIABLE.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/MATROSKA/matroska-rppg6.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/SAOLDISPLAY-REGULAR.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Sequel100Black-95.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/about/About.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/about/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/art/[slug]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/books/[slug]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/hooks/useWorks.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/providers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/icon-burger.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/icon-close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/AboutDetailPage.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/AboutDetailPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Banner/Banner.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Banner/Banner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BookDetail/BookDetail.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BookDetail/BookDetail.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BooksList/BooksList.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BooksList/BooksList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Gallery/Gallery.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Gallery/Gallery.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HeaderDropdownMenu/HeaderDropdownMenu.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HeaderDropdownMenu/HeaderDropdownMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/PagLayout.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/PageLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MediaSlider/MediaSlider.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MediaSlider/MediaSlider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WorkDetail/WorkDetailPage.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WorkDetail/WorkDetailPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/LocaleContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/directus.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/locale.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/translations.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/queries/books.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/queries/getAbout.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/queries/getWorks.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/queries/getWorksBySlug.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/mixins.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/variables.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/about.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/book.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/directusTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/file.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/language.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/mediaItem.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/work.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/aboutTranslations.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/gallery.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/images.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/isMobile.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/localeMap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/localeUtils.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/workTranslation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,14 +25,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/matthewmatbebal/photo.git",
-    "accountId": "7aeb1aa9-889e-4bd9-9448-a7bf4065412e"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;matthewmatbebal&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/matthewmatbebal/photo.git&quot;,
+    &quot;accountId&quot;: &quot;7aeb1aa9-889e-4bd9-9448-a7bf4065412e&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -169,8 +103,18 @@
       <workItem from="1754852862724" duration="10607000" />
       <workItem from="1755456548163" duration="9393000" />
       <workItem from="1755803173048" duration="14218000" />
-      <workItem from="1755897204163" duration="48542000" />
+      <workItem from="1755897204163" duration="48884000" />
+      <workItem from="1756114965235" duration="367000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: create project">
+      <option name="closed" value="true" />
+      <created>1756080159843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756080159843</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
