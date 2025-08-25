@@ -27,7 +27,7 @@
   line-height: 100%
   font-weight: 400
   text-transform: uppercase
-  font-family: Saoldisplay, sans-serif
+  @include mixins.font-saoldisplay
 
   @media (max-width: vars.$tablet)
     font-size: 36px
@@ -37,8 +37,8 @@
   font-size: 16px
   line-height: 100%
   color: black
-  font-family: Clashdisplay, sans-serif
-
+  @include mixins.font-clashdisplay
+  
   @media (max-width: vars.$tablet)
     margin-bottom: 40px
 
