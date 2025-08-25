@@ -1,0 +1,80 @@
+@use "@/styles/variables" as vars
+@use "@/styles/mixins"
+
+.footer
+  background-color: black
+
+  .container
+    font-size: 18px
+    padding: 40px 20px
+    @include mixins.container
+    box-sizing: border-box
+
+    @media (max-width: vars.$tablet)
+      height: 302px
+      padding: 40px 0
+
+    .main
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      position: relative
+      z-index: 1
+
+      @media (max-width: vars.$pre-mobile)
+        height: 100%
+
+      .description
+        color: #858585
+        @include mixins.font-clashdisplay
+
+        @media (max-width: vars.$tablet)
+          max-width: 160px
+          font-size: 14px
+          font-weight: 500
+
+      .title
+        color: white
+        font-family: Saoldisplay, sans-serif
+        font-size: 32px
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        text-transform: uppercase
+        width: 100%
+        z-index: -1
+
+        @media (max-width: vars.$tablet)
+          top: 0
+
+      .navElems
+        display: flex
+        flex-direction: column
+        gap: 10px
+        font-size: 18px
+        line-height: 100%
+        font-weight: 500
+
+        @media (max-width: vars.$tablet)
+          gap: 5px
+
+        a
+          color: #858585
+          @include mixins.font-clashdisplay
+          text-decoration: none
+          transition: transform .2s ease-in-out
+
+          &:hover
+            text-decoration: underline
+    .date
+      color: #858585
+      font-family: Clashdisplay, sans-serif
+      text-align: start
+      width: 100%
+      margin-top: 52px
+
+      @media(max-width: vars.$tablet)
+        margin-top: 0

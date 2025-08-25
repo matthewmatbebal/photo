@@ -1,0 +1,157 @@
+// src/components/Gallery/Gallery.module.sass
+@use "@/styles/variables" as vars
+@use "@/styles/mixins"
+
+.gallery
+  gap: 20px
+  padding-bottom: 80px
+  @include mixins.flex-center(row, center, center)
+  @include mixins.container
+
+  @media (max-width: vars.$tablet)
+    padding-bottom: 30px
+    flex-direction: column
+
+.column
+  display: flex
+  flex-direction: column
+  gap: 30px
+  width: 100%
+
+.item
+  display: flex
+  flex-direction: column
+
+.image
+  object-fit: cover
+  transition: transform .25s ease
+  &:hover
+    transform: scale(1.02)
+
+.toLeft
+  align-self: flex-start
+
+.toRight
+  align-self: flex-end
+
+.info
+  margin-top: 8px
+  display: flex
+  flex-direction: column
+  gap: 4px
+  @include mixins.font-clashdisplay
+
+.date
+  font-size: 16px
+  color: #858585
+
+.title
+  font-size: 1rem
+  color: black
+  font-weight: 600
+
+.showMore
+  display: flex
+  margin: 40px auto 80px
+  background: none
+  font-size: 16px
+  @include mixins.font-clashdisplay
+  color: black
+  font-weight: 600
+  border: none
+  text-decoration: underline
+  cursor: pointer
+  transition: opacity .2s ease
+
+  &:hover
+    opacity: .85
+
+.booksSection
+  padding-top: 60px
+
+  @media (max-width: vars.$tablet)
+    padding-top: 0
+
+  .booksContainer
+    @include mixins.container
+    @include mixins.flex-center(row, center, start)
+    gap: 20px
+    padding-bottom: 30px
+
+    @media (max-width: vars.$tablet)
+      flex-direction: column
+      padding: 0
+      margin: 0 0 60px 0
+      // Убираем контейнерные отступы для слайдера
+      width: 100%
+
+    .booksText
+      @include mixins.font-clashdisplay
+      font-size: 16px
+      line-height: 125%
+      padding-top: 17px
+
+      @media (max-width: vars.$tablet)
+        padding-left: 16px
+        margin-bottom: 40px
+
+
+/* src/components/Gallery/Gallery.module.sass */
+
+/* ... существующие стили ... */
+
+/* Общий мобильный паддинг для всей секции работ */
+.worksSection
+  padding: 0 12px
+
+  @media (min-width: 769px)
+    padding: 0
+
+/* Картинка в мобильном режиме — тянется по ширине карточки */
+.image
+  display: block
+  width: 100%
+  height: auto
+  object-fit: cover
+/* для десктопа размеры задаются атрибутами width/height */
+
+/* ======= Мобильная сетка ======= */
+.mobileGallery
+  display: flex
+  flex-direction: column
+  gap: 16px
+  max-width: 768px
+  margin: 0 auto
+
+/* Один элемент в ряд (full-width) */
+.rowOne
+  .item
+    width: 100%
+
+/* Два элемента в ряд */
+.rowTwo
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 12px
+
+/* Внутренняя колонка для двух картинок */
+.col
+  .item
+    width: 100%
+
+/* Переопределяем десктопные отступы/сдвиги на мобиле */
+@media (max-width: 768px)
+  .gallery, .column
+    display: none  // прячем десктопную версию
+
+  .item
+    margin: 0 0 8px 0
+
+  .toLeft, .toRight
+    /* выравнивания не нужны на мобильном — сетка управляет раскладкой */
+    transform: none
+
+/* Десктопная сетка остаётся как есть */
+@media (min-width: 769px)
+  .mobileGallery
+    display: none

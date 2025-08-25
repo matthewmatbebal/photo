@@ -1,0 +1,54 @@
+@use "@/styles/variables" as vars
+@use "@/styles/mixins"
+
+
+.container
+  @include mixins.flex-center(row, space-between, center)
+  align-items: start
+  padding-top: 8px
+
+  @media (max-width: vars.$tablet)
+    flex-direction: column-reverse
+
+.main
+  display: flex
+  flex-direction: column
+  max-width: 360px
+  padding-left: 20px
+
+  @media (max-width: vars.$tablet)
+    max-width: unset
+    min-height: 50vh
+    height: 100%
+    padding: 0 10px
+
+.title
+  font-size: 32px
+  line-height: 100%
+  font-weight: 400
+  text-transform: uppercase
+  font-family: Saoldisplay, sans-serif
+
+  @media (max-width: vars.$tablet)
+    font-size: 36px
+    margin-top: 30px
+
+.textContainer
+  font-size: 16px
+  line-height: 100%
+  color: black
+  font-family: Clashdisplay, sans-serif
+
+  @media (max-width: vars.$tablet)
+    margin-bottom: 40px
+
+
+  p
+    margin: 0 0 20px
+
+.slider
+  width: 50%
+  /* Чтоб на узких экранах не вылезало лишнее */
+  @media (max-width: vars.$tablet)
+    margin-right: 0
+    width: 100%

@@ -1,0 +1,126 @@
+@use "@/styles/variables" as vars
+@use "@/styles/mixins"
+
+.dropdown
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background: #D9D9D9
+  z-index: 1000
+  padding: 20px
+  transform: translateY(-100%)
+  transition: transform 0.3s ease-in-out
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1)
+
+  @include mixins.font-clashdisplay
+
+  &.open
+    transform: translateY(0)
+
+.header
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin-bottom: 30px
+
+.title
+  font-size: 16px
+  font-weight: 400
+  line-height: 100%
+  color: #1F1F1F
+  margin: 0
+  position: absolute
+  left: 50%
+  max-width: 103px
+  transform: translateX(-50%)
+  font-family: Saoldisplay, sans-serif
+  text-align: center
+  text-transform: uppercase
+  top: 0
+
+.closeButton
+  position: absolute
+  right: 0
+  background: none
+  border: none
+  cursor: pointer
+  padding: 4px
+  color: black
+  display: flex
+  align-items: center
+  top: 0
+  justify-content: center
+
+  &:hover
+    opacity: 0.7
+
+.menuButton
+  background: none
+  border: none
+  cursor: pointer
+  padding: 4px
+  color: inherit
+  display: flex
+  align-items: center
+  justify-content: center
+
+  &:hover
+    opacity: 0.7
+
+  &.whiteText
+    color: white
+
+.menuButton
+  background: none
+  border: none
+  cursor: pointer
+  padding: 4px
+  color: inherit
+  display: flex
+  align-items: center
+  justify-content: center
+
+  &:hover
+    opacity: 0.7
+
+  &.whiteText
+    color: white
+
+.navigation
+  @include mixins.flex-center(column, center, center)
+  margin-top: 75px
+  gap: 10px
+  margin-bottom: 30px
+
+.navLink
+  font-size: 16px
+  font-weight: 500
+  color: #1F1F1F
+  text-decoration: none
+  line-height: 100%
+
+  &:hover
+    opacity: 0.7
+
+.languageSwitcher
+  @include mixins.flex-center(row, center, center)
+  gap: 3px
+  font-size: 16px
+  color: #1F1F1F
+  line-height: 100%
+  margin-top: 78px
+
+
+  span
+    color: black
+    margin: 0 5px
+
+.langLink
+  color: black
+  text-decoration: none
+  font-weight: 500
+
+  &:hover
+    opacity: 0.7

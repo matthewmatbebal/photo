@@ -1,0 +1,180 @@
+@use "@/styles/mixins"
+@use "@/styles/variables" as vars
+
+/* Контейнер */
+.container
+  @include mixins.container
+  @include mixins.flex-center(row, center, center)
+
+  @media (max-width: vars.$tablet)
+    max-width: unset
+
+.content
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+/* Мобильная и десктопная структуры */
+.mobileLayout
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.desktopLayout
+  display: none
+  width: 100%
+
+/* Базовые блоки */
+.block
+  width: 100%
+  display: block
+
+.blockTop
+  margin-bottom: 24px
+
+.blockMiddle
+  margin-bottom: 24px
+
+.blockBottom
+  margin-bottom: 24px
+
+/* Заголовки/тексты */
+.title
+  font-size: 32px
+  @include mixins.font-saoldisplay
+  line-height: 100%
+  text-transform: uppercase
+
+  @media (max-width: vars.$tablet)
+    font-size: 36px
+    padding: 0 10px
+    color: white
+    background-color: #010101
+
+
+.descriptionPlain
+  font-size: 16px
+  line-height: 125%
+  @include mixins.font-clashdisplay
+
+
+  @media (max-width: vars.$tablet)
+    font-size: 14px
+    padding: 8px 10px 16px
+    color: white
+    background-color: #010101
+
+.description
+  font-size: 16px
+  line-height: 125%
+  color: #1F1F1F
+  position: relative
+  @include mixins.font-clashdisplay
+
+  @media (max-width: vars.$tablet)
+    padding: 25px 10px 0
+    font-size: 14px
+    color: rgba(white, .7)
+    background-color: #010101
+    margin-top: -10px
+
+  p
+    @media (max-width: vars.$tablet)
+      margin: 0
+
+/* Изображения */
+.imageBlock
+  display: flex
+  flex-direction: column
+
+.image, .coverImage
+  display: block
+  width: 100%
+  height: auto
+  object-fit: cover
+
+.caption
+  margin-top: 8px
+  font-size: 14px
+  opacity: 0.8
+
+.coverBlock
+  margin: 0
+
+.sliderWrap
+  background-color: #010101
+
+.sourcesSection
+  @media (max-width: vars.$tablet)
+    background-color: #010101
+    padding: 10px 10px 12px
+    margin-bottom: -1px
+
+.sourcesTitle
+  @include mixins.font-clashdisplay
+  font-weight: 600
+  font-size: 20px
+  margin: 30px 0 15px
+
+  @media (max-width: vars.$tablet)
+    font-size: 14px
+    font-weight: 600
+    color: white
+    padding-bottom: 10px
+
+.sourcesList
+  list-style: none
+  margin: 0
+  padding: 0
+  display: grid
+  grid-template-columns: 1fr
+  gap: 5px
+
+.sourceItem
+  display: block
+
+.sourceLink
+  text-decoration: none
+  font-size: 16px
+  @include mixins.font-clashdisplay
+  line-height: 100%
+  color: #1F1F1F
+  font-weight: 600
+  opacity: .5
+
+  @media (max-width: vars.$tablet)
+    color: white
+
+  &:hover
+    text-decoration: underline
+
+/* ========================================================= */
+/*      ДЕСКТОП: перестановка блоков и видимость элементов   */
+/* ========================================================= */
+@media (min-width: 1024px)
+  .mobileLayout
+    display: none
+
+  .desktopLayout
+    display: flex
+    justify-content: space-between
+
+  .descriptionPlain
+    font-size: 17px
+
+  .description
+    font-size: 17px
+
+  .blockTop
+    max-width: 325px
+    margin-bottom: 28px
+    padding-right: 80px
+
+  .blockMiddle
+    margin-bottom: 28px
+    max-width: 500px
+
+  .blockBottom
+    margin-bottom: 28px
+    max-width: 205px
+    padding-left: 35px

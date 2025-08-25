@@ -1,0 +1,168 @@
+// src/components/BooksList/BooksList.module.sass
+@use "@/styles/mixins"
+
+.booksContainer
+  width: 100%
+
+  @media (max-width: 768px)
+    // На мобайле контейнер касается правого края
+    margin-left: 20px
+    margin-right: 0
+    width: calc(100vw - 20px)
+
+.booksList
+  // Десктоп - обычный флекс
+  display: flex
+  justify-content: end
+  gap: 15px
+
+  @media (max-width: 768px)
+    display: none // Скрываем на мобайле, используем Swiper
+
+.sliderWrapper
+  display: flex
+  gap: 15px
+  transition: transform 0.3s ease
+
+  @media (max-width: 768px)
+    // На мобайле слайдер занимает больше места для peek эффекта
+    width: calc(100% + 30px)
+    gap: 10px
+
+.bookItem
+  flex-shrink: 0
+  transition: transform 0.2s ease
+  @include mixins.font-clashdisplay
+  color: #1F1F1F
+
+  // Десктоп стили
+  @media (min-width: 769px)
+    display: flex
+    flex-direction: column
+    max-width: 180px
+    gap: 5px
+
+    &:hover
+      transform: translateY(-4px)
+
+  // Мобайл стили - горизонтальный layout
+  @media (max-width: 768px)
+    display: flex
+    flex-direction: row
+    width: calc(100vw - 40px) // Учитываем только левый отступ
+    max-width: 320px
+    gap: 10px
+    align-items: flex-start
+
+.bookCover
+  position: relative
+  overflow: hidden
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+  transition: box-shadow 0.2s ease
+  flex-shrink: 0
+
+  @media (min-width: 769px)
+    &:hover
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15)
+
+  @media (max-width: 768px)
+    width: 190px
+    height: 255px
+
+.coverImage
+  display: block
+  object-fit: cover
+
+  @media (min-width: 769px)
+    width: 180px
+    height: 226px
+
+  @media (max-width: 768px)
+    width: 190px
+    height: 255px
+
+.coverPlaceholder
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)
+  display: flex
+  align-items: center
+  justify-content: center
+  font-weight: 600
+  color: #666
+  text-align: center
+  padding: 1rem
+
+  @media (min-width: 769px)
+    width: 180px
+    height: 226px
+    font-size: 1.2rem
+
+  @media (max-width: 768px)
+    width: 120px
+    height: 150px
+    font-size: 1rem
+
+.bookInfo
+  flex: 1
+
+  @media (max-width: 768px)
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    gap: 8px
+
+.bookTitle
+  font-weight: 600
+  line-height: 100%
+
+  @media (min-width: 769px)
+    font-size: 20px
+
+  @media (max-width: 768px)
+    font-size: 14px
+
+.bookDescription
+  line-height: 125%
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  overflow: hidden
+
+  @media (min-width: 769px)
+    font-size: 16px
+    -webkit-line-clamp: 2
+
+  @media (max-width: 768px)
+    font-size: 14px
+    -webkit-line-clamp: 8
+
+.readMore
+  @media (max-width: 768px)
+    margin-top: auto
+
+  a
+    color: #858585
+    font-size: 14px
+
+// Пагинация
+.pagination
+  display: none
+
+  @media (max-width: 768px)
+    display: flex
+    justify-content: center
+    gap: 8px
+    margin-top: 20px
+
+.paginationDot
+  width: 8px
+  height: 8px
+  border-radius: 50%
+  border: none
+  background-color: #D1D5DB
+  cursor: pointer
+  transition: background-color 0.2s ease
+
+  &.active
+    background-color: #1F1F1F
+
+  &:hover
+    background-color: #9CA3AF
