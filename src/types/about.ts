@@ -1,3 +1,5 @@
+//src/types/about.ts
+
 import { Language } from "@/types/language";
 import { MediaItem } from "@/types/mediaItem";
 
@@ -12,7 +14,7 @@ export interface AboutTranslation {
 export interface AboutSource {
   id: number;
   label: string;
-  link: string; // см. поле link в Directus
+  link: string;
   sort?: number | null;
 }
 
@@ -22,8 +24,8 @@ export interface About {
   content?: string | null;
   description?: string | null;
   cover_image: string | null;
-  sources?: AboutSource[] | null; // O2M
-  media_items?: MediaItem[] | null; // M2M -> существующая media_items
+  sources?: AboutSource[] | null;
+  media_items?: MediaItem[] | null;
   translations?: AboutTranslation[] | null;
 }
 

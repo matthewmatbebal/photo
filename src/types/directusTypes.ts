@@ -1,3 +1,5 @@
+//src/types/directusTypes.ts
+
 import { Work, WorkTranslation } from "@/types/work";
 import { MediaItem } from "@/types/mediaItem";
 import { About, AboutSource, AboutTranslation } from "@/types/about";

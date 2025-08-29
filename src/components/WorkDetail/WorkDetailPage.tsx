@@ -1,3 +1,5 @@
+//src/components/WorkDetail/WorkDetailPage.tsx
+
 "use client";
 
 import MediaSlider from "@/components/MediaSlider/MediaSlider";

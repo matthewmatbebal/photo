@@ -1,4 +1,4 @@
-// src/app/[locale]/page.tsx (или где вы используете Gallery)
+// src/app/[locale]/page.tsx
 import PageLayout from "@/components/Layout/PageLayout";
 import Gallery from "@/components/Gallery/Gallery";
 import { getBooks } from "@/server/queries/books";

@@ -17,7 +17,6 @@ export function BookDetailPage({ book }: BookDetailPageProps) {
 
   return (
     <div className={styles.bookDetail}>
-      {/* Mobile title - показывается только на мобилке */}
       <div className={styles.mobileTitle}>
         <div className={styles.bookTitle}>{book.title}</div>
       </div>
@@ -38,7 +37,6 @@ export function BookDetailPage({ book }: BookDetailPageProps) {
         </div>
 
         <div className={styles.bookInfo}>
-          {/* Desktop title - показывается только на десктопе */}
           <div className={styles.desktopTitle}>
             <div className={styles.bookTitle}>{book.title}</div>
           </div>

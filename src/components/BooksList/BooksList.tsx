@@ -88,7 +88,6 @@ export default function BooksList({ books }: BooksListProps) {
     );
   };
 
-  // На десктопе - обычный флекс
   if (!isMobile) {
     return (
       <div className={styles.booksContainer}>

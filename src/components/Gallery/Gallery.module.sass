@@ -82,7 +82,6 @@
       flex-direction: column
       padding: 0
       margin: 0 0 60px 0
-      // Убираем контейнерные отступы для слайдера
       width: 100%
 
     .booksText
@@ -96,26 +95,19 @@
         margin-bottom: 40px
 
 
-/* src/components/Gallery/Gallery.module.sass */
 
-/* ... существующие стили ... */
-
-/* Общий мобильный паддинг для всей секции работ */
 .worksSection
   padding: 0 12px
 
   @media (min-width: 769px)
     padding: 0
 
-/* Картинка в мобильном режиме — тянется по ширине карточки */
 .image
   display: block
   width: 100%
   height: auto
   object-fit: cover
-/* для десктопа размеры задаются атрибутами width/height */
 
-/* ======= Мобильная сетка ======= */
 .mobileGallery
   display: flex
   flex-direction: column
@@ -124,35 +116,29 @@
   margin: 0 auto
   padding-bottom: 40px
 
-/* Один элемент в ряд (full-width) */
 .rowOne
   .item
     width: 100%
 
-/* Два элемента в ряд */
 .rowTwo
   display: grid
   grid-template-columns: 1fr 1fr
   gap: 12px
 
-/* Внутренняя колонка для двух картинок */
 .col
   .item
     width: 100%
 
-/* Переопределяем десктопные отступы/сдвиги на мобиле */
 @media (max-width: 768px)
   .gallery, .column
-    display: none  // прячем десктопную версию
+    display: none
 
   .item
     margin: 0 0 8px 0
 
   .toLeft, .toRight
-    /* выравнивания не нужны на мобильном — сетка управляет раскладкой */
     transform: none
 
-/* Десктопная сетка остаётся как есть */
 @media (min-width: 769px)
   .mobileGallery
     display: none

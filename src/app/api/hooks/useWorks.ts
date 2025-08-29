@@ -18,7 +18,6 @@ async function fetchWorksByLocale({
   pageParam: number;
   locale: Locale;
 }) {
-  // Всегда запрашиваем все поля и все переводы
   const rows = await directus.request(
     readItems("works", {
       limit: LIMIT,

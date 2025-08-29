@@ -1,7 +1,6 @@
 @use "@/styles/mixins"
 @use "@/styles/variables" as vars
 
-/* Контейнер */
 .container
   @include mixins.container
   @include mixins.flex-center(row, center, center)
@@ -14,7 +13,6 @@
   display: flex
   justify-content: space-between
 
-/* Мобильная и десктопная структуры */
 .mobileLayout
   display: flex
   flex-direction: column
@@ -24,7 +22,6 @@
   display: none
   width: 100%
 
-/* Базовые блоки */
 .block
   width: 100%
   display: block
@@ -38,7 +35,6 @@
 .blockBottom
   margin-bottom: 24px
 
-/* Заголовки/тексты */
 .title
   font-size: 32px
   @include mixins.font-saoldisplay
@@ -50,7 +46,6 @@
     padding: 0 10px
     color: white
     background-color: #010101
-
 
 .descriptionPlain
   font-size: 16px
@@ -82,7 +77,6 @@
     @media (max-width: vars.$tablet)
       margin: 0
 
-/* Изображения */
 .imageBlock
   display: flex
   flex-direction: column
@@ -148,9 +142,6 @@
   &:hover
     text-decoration: underline
 
-/* ========================================================= */
-/*      ДЕСКТОП: перестановка блоков и видимость элементов   */
-/* ========================================================= */
 @media (min-width: 1024px)
   .mobileLayout
     display: none

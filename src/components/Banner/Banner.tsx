@@ -9,7 +9,6 @@ interface BannerProps {
 export default function Banner({ title }: BannerProps) {
   return (
     <div className={styles.banner}>
-      {/* Фоновое изображение на весь экран */}
       <Image
         src="/Cover_image.png"
         alt="banner"
@@ -18,7 +17,6 @@ export default function Banner({ title }: BannerProps) {
         priority
       />
 
-      {/* Контент поверх изображения */}
       <div className={styles.content}>
         <div className={styles.title}>{title}</div>
       </div>

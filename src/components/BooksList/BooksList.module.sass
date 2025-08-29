@@ -5,19 +5,17 @@
   width: 100%
 
   @media (max-width: 768px)
-    // На мобайле контейнер касается правого края
     margin-left: 20px
     margin-right: 0
     width: calc(100vw - 20px)
 
 .booksList
-  // Десктоп - обычный флекс
   display: flex
   justify-content: end
   gap: 15px
 
   @media (max-width: 768px)
-    display: none // Скрываем на мобайле, используем Swiper
+    display: none
 
 .sliderWrapper
   display: flex
@@ -25,7 +23,6 @@
   transition: transform 0.3s ease
 
   @media (max-width: 768px)
-    // На мобайле слайдер занимает больше места для peek эффекта
     width: calc(100% + 30px)
     gap: 10px
 
@@ -35,7 +32,6 @@
   @include mixins.font-clashdisplay
   color: #1F1F1F
 
-  // Десктоп стили
   @media (min-width: 769px)
     display: flex
     flex-direction: column
@@ -45,11 +41,10 @@
     &:hover
       transform: translateY(-4px)
 
-  // Мобайл стили - горизонтальный layout
   @media (max-width: 768px)
     display: flex
     flex-direction: row
-    width: calc(100vw - 40px) // Учитываем только левый отступ
+    width: calc(100vw - 40px)
     max-width: 320px
     gap: 10px
     align-items: flex-start
@@ -142,7 +137,6 @@
     color: #858585
     font-size: 14px
 
-// Пагинация
 .pagination
   display: none
 

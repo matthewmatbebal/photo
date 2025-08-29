@@ -1,3 +1,5 @@
+//src/components/MediaSlider/MediaSlider.tsx
+
 "use client";
 
 import { useState } from "react";

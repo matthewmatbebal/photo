@@ -5,13 +5,11 @@ import { LocaleProvider } from "@/context/LocaleContext";
 import { LOCALES, Locale } from "@/lib/locale";
 import type { ReactNode } from "react";
 
-/** Соответствие коду локали → HTML lang */
 export function mapLocaleToHtmlLang(locale: Locale): string {
   return locale;
 }
 
 export async function generateStaticParams() {
-  // Генерируем статические параметры для всех локалей
   return LOCALES.map((locale) => ({ locale }));
 }
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { getImageUrl } from "@/utils/images";
-import MediaSlider from "@/components/MediaSlider/MediaSlider"; // слайдер для мобилки
+import MediaSlider from "@/components/MediaSlider/MediaSlider";
 import styles from "./AboutDetailPage.module.sass";
 import { LocalizedAbout } from "@/types/about";
 import { MediaItem } from "@/types/mediaItem";
@@ -43,9 +43,7 @@ export default function AboutDetailPage({ about }: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        {/* ====== МОБИЛЬНАЯ ВЕРСИЯ: все элементы в колонку ====== */}
         <div className={styles.mobileLayout}>
-          {/* 1. Cover Image */}
           {coverSrc && (
             <div className={styles.coverBlock}>
               <img
@@ -57,22 +55,18 @@ export default function AboutDetailPage({ about }: Props) {
             </div>
           )}
 
-          {/* 2. Title */}
           <div className={styles.title}>{about.title}</div>
 
-          {/* 3. Description */}
           {about.description && (
             <div className={styles.descriptionPlain}>{about.description}</div>
           )}
 
-          {/* 4. Slider */}
           {mediaItems.length > 0 && (
             <div className={styles.sliderWrap}>
               <MediaSlider items={mediaItems} />
             </div>
           )}
 
-          {/* 5. Content */}
           {about.content && (
             <div
               className={styles.description}
@@ -80,7 +74,6 @@ export default function AboutDetailPage({ about }: Props) {
             />
           )}
 
-          {/* 6. Sources */}
           {about.sources && about.sources.length > 0 && (
             <div className={styles.sourcesSection}>
               <div className={styles.sourcesTitle}>{t.links()}</div>
@@ -102,7 +95,6 @@ export default function AboutDetailPage({ about }: Props) {
           )}
         </div>
 
-        {/* ====== ДЕСКТОПНАЯ ВЕРСИЯ: оригинальная структура ====== */}
         <div className={styles.desktopLayout}>
           <section className={`${styles.block} ${styles.blockTop}`}>
             {firstImage && (
@@ -119,7 +111,6 @@ export default function AboutDetailPage({ about }: Props) {
               </div>
             )}
 
-            {/* sources на десктопе РЯДОМ с первым фото (под ним) */}
             {about.sources && about.sources.length > 0 && (
               <div className={styles.sourcesSection}>
                 <div className={styles.sourcesTitle}>{t.links()}</div>

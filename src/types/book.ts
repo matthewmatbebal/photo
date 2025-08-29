@@ -1,3 +1,5 @@
+//src/types/book.ts
+
 import { Language } from "@/types/language";
 
 export interface BookTranslation {

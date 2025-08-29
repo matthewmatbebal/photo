@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
 @font-face {
   font-family: "Sequel 100 Wide 95";
-  src: url("/fonts/Sequel100Black-95.ttf") format("truetype"); /* убран лишний '/' в конце */
+  src: url("/fonts/Sequel100Black-95.ttf") format("truetype");
   font-style: normal;
   font-display: swap;
 }

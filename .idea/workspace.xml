@@ -4,23 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee1aa780-643a-44e9-8565-2b139ec0f0a6" name="Changes" comment="feat: create project">
+    <list default="true" id="a02699f1-115d-42ad-9705-63a24138c6d5" name="Changes" comment="fix: update fonts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/art/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/art/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/hooks/useWorks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/hooks/useWorks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/AboutDetailPage.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutDetailPage.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/AboutDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutDetailPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BookDetail/BookDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookDetail/BookDetail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BooksList/BooksList.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BooksList/BooksList.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BooksList/BooksList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BooksList/BooksList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gallery/Gallery.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gallery/Gallery.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MediaSlider/MediaSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaSlider/MediaSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WorkDetail/WorkDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorkDetail/WorkDetailPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/about.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/about.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/book.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/directusTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/directusTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/file.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/file.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/language.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/language.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/mediaItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/mediaItem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/work.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/work.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript JSX File" />
-        <option value="Sass File" />
-        <option value="TypeScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,13 +50,10 @@
     &quot;accountId&quot;: &quot;7aeb1aa9-889e-4bd9-9448-a7bf4065412e&quot;
   }
 }</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
+  &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2wgNLAmTTTNRVcuw1o8XIAi10it" />
+  <component name="ProjectId" id="31mVKZzi00UXxc9cBS3kJxbJNxr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,29 +62,16 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mat/photo-gallery&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/mat/photo-gallery/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/icons" />
-      <recent name="$PROJECT_DIR$/src/app/[locale]/Books/[slug]" />
-      <recent name="$PROJECT_DIR$/public/static" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src/app/[locale]" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -85,54 +82,21 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ee1aa780-643a-44e9-8565-2b139ec0f0a6" name="Changes" comment="" />
-      <created>1746459198803</created>
+      <changelist id="a02699f1-115d-42ad-9705-63a24138c6d5" name="Changes" comment="fix: update fonts" />
+      <created>1756129171388</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1746459198803</updated>
-      <workItem from="1746459200400" duration="6433000" />
-      <workItem from="1746606311804" duration="8441000" />
-      <workItem from="1746796931475" duration="12866000" />
-      <workItem from="1747987180186" duration="351000" />
-      <workItem from="1747988011456" duration="32000" />
-      <workItem from="1754552757646" duration="205000" />
-      <workItem from="1754553051928" duration="1936000" />
-      <workItem from="1754554996243" duration="4268000" />
-      <workItem from="1754562887067" duration="7680000" />
-      <workItem from="1754850788975" duration="1338000" />
-      <workItem from="1754852862724" duration="10607000" />
-      <workItem from="1755456548163" duration="9393000" />
-      <workItem from="1755803173048" duration="14218000" />
-      <workItem from="1755897204163" duration="48884000" />
-      <workItem from="1756114965235" duration="367000" />
+      <updated>1756129171388</updated>
+      <workItem from="1756129172494" duration="3464000" />
+      <workItem from="1756468193300" duration="2467000" />
     </task>
-    <task id="LOCAL-00001" summary="feat: create project">
-      <option name="closed" value="true" />
-      <created>1756080159843</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1756080159843</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create project" />
+    <MESSAGE value="fix: update fonts" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: update fonts" />
   </component>
 </project>

@@ -1,3 +1,5 @@
+//src/app/[locale]/art/[slug]/page.tsx
+
 import { notFound } from "next/navigation";
 import PageLayout from "@/components/Layout/PageLayout";
 import WorkDetailPage from "@/components/WorkDetail/WorkDetailPage";
@@ -9,7 +11,7 @@ interface WorkPageProps {
 }
 
 export default async function WorkPage({ params }: WorkPageProps) {
-  const { slug, locale } = await params; // обязательно await
+  const { slug, locale } = await params;
   const work = await getWorkBySlug(slug, locale);
   if (!work) notFound();
 

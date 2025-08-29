@@ -1,3 +1,5 @@
+//src/types/mediaItem.ts
+
 import { DirectusFileMinimal } from "@/types/file";
 
 export interface MediaItem {

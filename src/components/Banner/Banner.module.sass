@@ -15,11 +15,11 @@
 
 .bannerBg
   object-fit: cover
-  z-index: 0 // Фон под всем контентом
+  z-index: 0
 
 .content
   position: relative
-  z-index: 1 // Поверх изображения, но под хедером
+  z-index: 1
   height: 100%
   display: flex
   align-items: flex-start
@@ -29,7 +29,7 @@
   @media (max-width: vars.$tablet)
     align-items: flex-end
     justify-content: flex-start
-    padding: 0 20px 40px 20px // Отступ снизу
+    padding: 0 20px 40px 20px
 
 .title
   font-family: "Sequel 100 Wide 95", sans-serif
@@ -38,10 +38,9 @@
   line-height: 100%
   color: white
   text-align: right
-  // 15px от хедера (предполагая высоту хедера ~60px)
   margin-top: 75px
 
   @media (max-width: vars.$tablet)
     font-size: 28px
     text-align: left
-    margin-top: 0 // На мобайле внизу
+    margin-top: 0
