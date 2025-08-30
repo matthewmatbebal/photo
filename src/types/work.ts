@@ -1,6 +1,5 @@
-//src/types/work.ts
-
-import { MediaItem } from "@/types/mediaItem";
+// src/types/work.ts
+import { DirectusFileMinimal } from "@/types/file";
 import { Language } from "@/types/language";
 
 export interface WorkTranslation {
@@ -17,7 +16,7 @@ export interface Work {
   slug: string;
   shoot_date: string | null;
   cover_image: string | null;
-  media_items?: MediaItem[] | null;
+  media_items?: DirectusFileMinimal[] | null;
   translations?: WorkTranslation[] | null;
 }
 
@@ -28,6 +27,6 @@ export interface LocalizedWork {
   slug: string;
   shoot_date: string | null;
   cover_image: string | null;
-  media_items?: MediaItem[] | null;
+  media_items?: DirectusFileMinimal[] | null;
   isTranslated: boolean;
 }

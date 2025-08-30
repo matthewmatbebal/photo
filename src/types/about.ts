@@ -1,7 +1,6 @@
-//src/types/about.ts
-
+// src/types/about.ts
 import { Language } from "@/types/language";
-import { MediaItem } from "@/types/mediaItem";
+import { DirectusFileMinimal } from "@/types/file";
 
 export interface AboutTranslation {
   id: number;
@@ -11,7 +10,7 @@ export interface AboutTranslation {
   description?: string | null;
 }
 
-export interface AboutSource {
+export interface AboutLinks {
   id: number;
   label: string;
   link: string;
@@ -24,8 +23,8 @@ export interface About {
   content?: string | null;
   description?: string | null;
   cover_image: string | null;
-  sources?: AboutSource[] | null;
-  media_items?: MediaItem[] | null;
+  links?: AboutLinks[] | null;
+  media_items?: DirectusFileMinimal[] | null;
   translations?: AboutTranslation[] | null;
 }
 
@@ -35,7 +34,7 @@ export interface LocalizedAbout {
   content?: string | null;
   description?: string | null;
   cover_image: string | null;
-  sources?: AboutSource[] | null;
-  media_items?: MediaItem[] | null;
+  links?: AboutLinks[] | null;
+  media_items?: DirectusFileMinimal[] | null;
   isTranslated: boolean;
 }

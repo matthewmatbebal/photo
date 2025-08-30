@@ -1,44 +1,35 @@
+// src/components/About/AboutDetailPage.tsx
 "use client";
 
 import { getImageUrl } from "@/utils/images";
 import MediaSlider from "@/components/MediaSlider/MediaSlider";
 import styles from "./AboutDetailPage.module.sass";
 import { LocalizedAbout } from "@/types/about";
-import { MediaItem } from "@/types/mediaItem";
+import { DirectusFileMinimal } from "@/types/file";
 import { useTranslations } from "@/lib/translations";
-
-interface FileRefObject {
-  id: string;
-  type?: string | null;
-}
-type FileRef = string | FileRefObject | null;
 
 interface Props {
   about: LocalizedAbout;
 }
 
-function getFileId(file: FileRef): string | null {
-  if (!file) return null;
-  return typeof file === "string" ? file : (file.id ?? null);
+function getCoverUrl(id: string | null): string | undefined {
+  return id ? getImageUrl(id) : undefined;
 }
 
-function getOriginalUrl(file: FileRef | string | null): string | null {
-  if (!file) return null;
-  if (typeof file === "string") return getImageUrl(file);
-  const id = getFileId(file);
-  return id ? getImageUrl(id) : null;
+function getFileUrl(file: DirectusFileMinimal | null): string | undefined {
+  return file?.id ? getImageUrl(file.id) : undefined;
 }
 
-function getAltText(item: MediaItem): string {
-  return item.caption ?? "";
+function getAlt(file: DirectusFileMinimal | null): string {
+  return file?.title ?? "";
 }
 
 export default function AboutDetailPage({ about }: Props) {
-  const coverSrc = getOriginalUrl(about.cover_image ?? null);
-  const mediaItems = (about.media_items ?? []).slice(0, 2); // работаем только с первыми двумя изображениями
-  const firstImage = mediaItems[0] ?? null;
-  const secondImage = mediaItems[1] ?? null;
   const t = useTranslations();
+
+  const coverSrc = getCoverUrl(about.cover_image);
+  const media = about.media_items ?? [];
+  const [firstImage, secondImage] = media;
 
   return (
     <div className={styles.container}>
@@ -61,9 +52,9 @@ export default function AboutDetailPage({ about }: Props) {
             <div className={styles.descriptionPlain}>{about.description}</div>
           )}
 
-          {mediaItems.length > 0 && (
+          {media.length > 0 && (
             <div className={styles.sliderWrap}>
-              <MediaSlider items={mediaItems} />
+              <MediaSlider items={media} />
             </div>
           )}
 
@@ -74,19 +65,19 @@ export default function AboutDetailPage({ about }: Props) {
             />
           )}
 
-          {about.sources && about.sources.length > 0 && (
+          {about.links && about.links.length > 0 && (
             <div className={styles.sourcesSection}>
               <div className={styles.sourcesTitle}>{t.links()}</div>
               <ul className={styles.sourcesList}>
-                {about.sources.map((source) => (
-                  <li key={source.id} className={styles.sourceItem}>
+                {about.links.map((link) => (
+                  <li key={link.id} className={styles.sourceItem}>
                     <a
-                      href={source.link}
+                      href={link.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={styles.sourceLink}
                     >
-                      {source.link}
+                      {link.link}
                     </a>
                   </li>
                 ))}
@@ -100,30 +91,31 @@ export default function AboutDetailPage({ about }: Props) {
             {firstImage && (
               <div className={styles.imageBlock}>
                 <img
-                  src={getOriginalUrl(firstImage.file) ?? undefined}
-                  alt={getAltText(firstImage)}
+                  src={getFileUrl(firstImage)}
+                  alt={getAlt(firstImage)}
                   className={styles.image}
                   loading="lazy"
                 />
-                {firstImage.caption && (
-                  <p className={styles.caption}>{firstImage.caption}</p>
+                {/* В качестве подписи используем description файла */}
+                {firstImage.description && (
+                  <p className={styles.caption}>{firstImage.description}</p>
                 )}
               </div>
             )}
 
-            {about.sources && about.sources.length > 0 && (
+            {about.links && about.links.length > 0 && (
               <div className={styles.sourcesSection}>
                 <div className={styles.sourcesTitle}>{t.links()}</div>
                 <div className={styles.sourcesList}>
-                  {about.sources.map((source) => (
-                    <div key={source.id} className={styles.sourceItem}>
+                  {about.links.map((link) => (
+                    <div key={link.id} className={styles.sourceItem}>
                       <a
-                        href={source.link}
+                        href={link.link}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.sourceLink}
                       >
-                        {source.link}
+                        {link.link}
                       </a>
                     </div>
                   ))}
@@ -151,13 +143,13 @@ export default function AboutDetailPage({ about }: Props) {
             {secondImage && (
               <div className={styles.imageBlock}>
                 <img
-                  src={getOriginalUrl(secondImage.file) ?? undefined}
-                  alt={getAltText(secondImage)}
+                  src={getFileUrl(secondImage)}
+                  alt={getAlt(secondImage)}
                   className={styles.image}
                   loading="lazy"
                 />
-                {secondImage.caption && (
-                  <p className={styles.caption}>{secondImage.caption}</p>
+                {secondImage.description && (
+                  <p className={styles.caption}>{secondImage.description}</p>
                 )}
               </div>
             )}

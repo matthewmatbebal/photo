@@ -15,7 +15,7 @@ export function withAboutTranslation(
     description: t?.description ?? about.description,
     content: t?.content ?? about.content ?? null,
     cover_image: about.cover_image ?? null,
-    sources: about.sources ?? null,
+    links: about.links ?? null,
     media_items: about.media_items ?? null,
     isTranslated: Boolean(t),
   };

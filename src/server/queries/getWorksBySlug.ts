@@ -3,15 +3,25 @@ import { readItems } from "@directus/sdk";
 import { directus } from "@/lib/directus";
 import { withTranslation } from "@/utils/workTranslation";
 import { DEFAULT_LOCALE, Locale } from "@/lib/locale";
-import { LocalizedWork } from "@/types/work";
+import { LocalizedWork, Work, WorkTranslation } from "@/types/work";
+import {
+  HasWorksMediaItemsJunction,
+  normalizeWorksMediaItemsStrict,
+} from "@/utils/media";
+
+type RawWorkForSlug = Omit<Work, "media_items" | "translations"> &
+  HasWorksMediaItemsJunction & {
+    translations?: WorkTranslation[] | null;
+  };
 
 export async function getWorkBySlug(
   slug: string,
   locale: Locale = DEFAULT_LOCALE,
 ): Promise<LocalizedWork | null> {
-  const rows = await directus.request(
+  const rows = (await directus.request(
     readItems("works", {
       limit: 1,
+      filter: { slug: { _eq: slug } },
       fields: [
         "id",
         "title",
@@ -20,18 +30,27 @@ export async function getWorkBySlug(
         "shoot_date",
         "cover_image",
         {
-          media_items: ["id", "caption", { file: ["id", "type"] }],
+          media_items: [
+            {
+              directus_files_id: ["id", "type", "title", "description"],
+            },
+          ],
         },
-        {
-          translations: ["id", "title", "description", "languages_code"],
-        },
+        { translations: ["id", "title", "description", "languages_code"] },
       ],
-      filter: {
-        slug: { _eq: slug },
-      },
     }),
-  );
+  )) as RawWorkForSlug[];
 
   const work = rows[0];
-  return work ? withTranslation(work, locale) : null;
+  if (!work) return null;
+
+  const normalized: LocalizedWork = withTranslation(
+    {
+      ...work,
+      media_items: normalizeWorksMediaItemsStrict(work),
+    },
+    locale,
+  );
+
+  return normalized;
 }

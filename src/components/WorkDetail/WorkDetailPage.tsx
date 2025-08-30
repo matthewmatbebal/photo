@@ -1,15 +1,14 @@
-//src/components/WorkDetail/WorkDetailPage.tsx
-
+// src/components/WorkDetail/WorkDetailPage.tsx
 "use client";
 
 import MediaSlider from "@/components/MediaSlider/MediaSlider";
 import styles from "./WorkDetailPage.module.sass";
-import { Work } from "@/types/work";
+import { LocalizedWork } from "@/types/work";
 import { DIRECTUS_LOCALE_MAP } from "@/lib/locale";
 import { useLocale } from "@/context/LocaleContext";
 
 interface Props {
-  work: Work;
+  work: LocalizedWork;
 }
 
 export default function WorkDetailPage({ work }: Props) {

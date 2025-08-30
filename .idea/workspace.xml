@@ -4,36 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a02699f1-115d-42ad-9705-63a24138c6d5" name="Changes" comment="fix: update fonts">
+    <list default="true" id="a02699f1-115d-42ad-9705-63a24138c6d5" name="Changes" comment="feat: migrate to files field, omit media items o2m">
+      <change afterPath="$PROJECT_DIR$/src/utils/media.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/art/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/art/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/hooks/useWorks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/hooks/useWorks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/AboutDetailPage.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutDetailPage.module.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/AboutDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutDetailPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BookDetail/BookDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookDetail/BookDetail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BooksList/BooksList.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BooksList/BooksList.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BooksList/BooksList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BooksList/BooksList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Gallery/Gallery.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gallery/Gallery.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MediaSlider/MediaSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaSlider/MediaSlider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WorkDetail/WorkDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorkDetail/WorkDetailPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/queries/getAbout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/queries/getAbout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/queries/getWorksBySlug.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/queries/getWorksBySlug.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/about.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/about.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/book.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/directusTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/directusTypes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/file.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/file.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/language.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/language.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/mediaItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/mediaItem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/mediaItem.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/work.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/work.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/aboutTranslations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/aboutTranslations.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -97,6 +94,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: update fonts" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: update fonts" />
+    <MESSAGE value="feat: migrate to files field, omit media items o2m" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: migrate to files field, omit media items o2m" />
   </component>
 </project>
