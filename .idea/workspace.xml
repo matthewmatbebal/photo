@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a02699f1-115d-42ad-9705-63a24138c6d5" name="Changes" comment="feat: migrate to files field, omit media items o2m">
-      <change afterPath="$PROJECT_DIR$/src/utils/media.ts" afterDir="false" />
+    <list default="true" id="a02699f1-115d-42ad-9705-63a24138c6d5" name="Changes" comment="feat: migrate to files field, omit media items o2m, update sources to links">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/AboutDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutDetailPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MediaSlider/MediaSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaSlider/MediaSlider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WorkDetail/WorkDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorkDetail/WorkDetailPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/queries/getAbout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/queries/getAbout.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/queries/getWorksBySlug.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/queries/getWorksBySlug.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/about.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/about.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/directusTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/directusTypes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/file.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/file.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/mediaItem.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/work.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/work.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/aboutTranslations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/aboutTranslations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BookDetail/BookDetail.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookDetail/BookDetail.module.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +75,15 @@
       <workItem from="1756129172494" duration="3464000" />
       <workItem from="1756468193300" duration="2467000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: migrate to files field, omit media items o2m, update sources to links">
+      <option name="closed" value="true" />
+      <created>1756592896971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756592896971</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +92,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: update fonts" />
     <MESSAGE value="feat: migrate to files field, omit media items o2m" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: migrate to files field, omit media items o2m" />
+    <MESSAGE value="feat: migrate to files field, omit media items o2m, update sources to links" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: migrate to files field, omit media items o2m, update sources to links" />
   </component>
 </project>
