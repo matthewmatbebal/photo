@@ -5,6 +5,7 @@ import { DirectusFileMinimal } from "@/types/file";
 import { getTranslation } from "@/lib/translations";
 import type { Locale } from "@/lib/locale";
 import MediaBlock from "@/components/MediaBlock/MediaBlock";
+import cn from "classnames";
 
 interface Props {
   about: LocalizedAbout;
@@ -39,14 +40,16 @@ export default function AboutDetailPage({ about, locale }: Props) {
             <div className={styles.coverBlock}>
               <img
                 src={coverSrc}
-                alt={about.title}
                 className={styles.coverImage}
                 loading="lazy"
               />
             </div>
           )}
 
-          <div className={styles.title}>{about.title}</div>
+          {/* CHANGED: отдельный класс для मोबाइलного тайтла */}
+          <div className={cn(styles.title, styles.titleMobile)}>
+            {about.title}
+          </div>
 
           {about.description && (
             <div className={styles.descriptionPlain}>{about.description}</div>
@@ -67,8 +70,7 @@ export default function AboutDetailPage({ about, locale }: Props) {
 
           {about.links && about.links.length > 0 && (
             <div className={styles.sourcesSection}>
-              <div className={styles.sourcesTitle}>{linksLabel}</div>{" "}
-              {/* CHANGED */}
+              <div className={styles.sourcesTitle}>{linksLabel}</div>
               <ul className={styles.sourcesList}>
                 {about.links.map((link) => (
                   <li key={link.id} className={styles.sourceItem}>
@@ -88,7 +90,7 @@ export default function AboutDetailPage({ about, locale }: Props) {
         </div>
 
         <div className={styles.desktopLayout}>
-          <section className={`${styles.block} ${styles.blockTop}`}>
+          <section className={cn(styles.block, styles.blockTop)}>
             {firstImage && (
               <div className={styles.imageBlock}>
                 <img
@@ -105,8 +107,7 @@ export default function AboutDetailPage({ about, locale }: Props) {
 
             {about.links && about.links.length > 0 && (
               <div className={styles.sourcesSection}>
-                <div className={styles.sourcesTitle}>{linksLabel}</div>{" "}
-                {/* CHANGED */}
+                <div className={styles.sourcesTitle}>{linksLabel}</div>
                 <div className={styles.sourcesList}>
                   {about.links.map((link) => (
                     <div key={link.id} className={styles.sourceItem}>
@@ -125,8 +126,10 @@ export default function AboutDetailPage({ about, locale }: Props) {
             )}
           </section>
 
-          <section className={`${styles.block} ${styles.blockMiddle}`}>
-            <div className={styles.title}>{about.title}</div>
+          <section className={cn(styles.block, styles.blockMiddle)}>
+            <div className={cn(styles.title, styles.titleDesktop)}>
+              {about.title}
+            </div>
 
             {about.description && (
               <div className={styles.descriptionPlain}>{about.description}</div>
@@ -140,7 +143,7 @@ export default function AboutDetailPage({ about, locale }: Props) {
             )}
           </section>
 
-          <section className={`${styles.block} ${styles.blockBottom}`}>
+          <section className={cn(styles.block, styles.blockBottom)}>
             {secondImage && (
               <div className={styles.imageBlock}>
                 <img

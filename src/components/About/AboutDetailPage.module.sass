@@ -50,11 +50,22 @@
     color: white
     background-color: #010101
 
+.titleMobile
+  display: block
+
+.titleDesktop
+  display: none
+
+  @media (min-width: 1024px)
+    display: block
+
+  @media (max-width: 1023px)
+    display: none !important
+
 .descriptionPlain
   font-size: 16px
   line-height: 125%
   @include mixins.font-clashdisplay
-
 
   @media (max-width: vars.$tablet)
     font-size: 14px
@@ -176,3 +187,10 @@
     margin-bottom: 28px
     max-width: 205px
     padding-left: 35px
+
+@media (max-width: 1023px)
+  .desktopLayout
+    display: none
+    visibility: hidden
+    height: 0
+    overflow: hidden
