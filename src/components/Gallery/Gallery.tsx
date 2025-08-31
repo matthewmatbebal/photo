@@ -150,18 +150,46 @@ export default function Gallery({ books }: GalleryProps) {
               </div>
             );
           }
-          return (
-            <div key={`row-${rowIdx}`} className={styles.rowTwo}>
-              {chunk.items.map(
-                (item) =>
-                  item && (
-                    <div key={item.id} className={styles.col}>
-                      {renderItem(item)}
-                    </div>
-                  ),
-              )}
-            </div>
-          );
+          // ИЗМЕНЕНИЕ: Обработка новых типов строк с разными размерами картинок
+          if (chunk.kind === "two-big-small") {
+            return (
+              <div key={`row-${rowIdx}`} className={styles.rowTwoBigSmall}>
+                {chunk.items.map(
+                  (item, itemIdx) =>
+                    item && (
+                      <div
+                        key={item.id}
+                        className={
+                          itemIdx === 0 ? styles.colBig : styles.colSmall
+                        }
+                      >
+                        {renderItem(item)}
+                      </div>
+                    ),
+                )}
+              </div>
+            );
+          }
+          if (chunk.kind === "two-small-big") {
+            return (
+              <div key={`row-${rowIdx}`} className={styles.rowTwoSmallBig}>
+                {chunk.items.map(
+                  (item, itemIdx) =>
+                    item && (
+                      <div
+                        key={item.id}
+                        className={
+                          itemIdx === 0 ? styles.colSmall : styles.colBig
+                        }
+                      >
+                        {renderItem(item)}
+                      </div>
+                    ),
+                )}
+              </div>
+            );
+          }
+          return null;
         })}
       </div>
     );
