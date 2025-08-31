@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a02699f1-115d-42ad-9705-63a24138c6d5" name="Changes" comment="fix: update gallery pattern, remove container fixed width">
+    <list default="true" id="a02699f1-115d-42ad-9705-63a24138c6d5" name="Changes" comment="fix: update mobile cover image position about page">
+      <change afterPath="$PROJECT_DIR$/src/components/MediaBlock/MediaBlock.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/AboutDetailPage.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutDetailPage.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/art/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/art/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/AboutDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutDetailPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BookDetail/BookDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookDetail/BookDetail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BooksList/BooksList.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BooksList/BooksList.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MediaSlider/MediaSlider.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaSlider/MediaSlider.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WorkDetail/WorkDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorkDetail/WorkDetailPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +64,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/MediaBlock" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,7 +86,7 @@
       <updated>1756129171388</updated>
       <workItem from="1756129172494" duration="3464000" />
       <workItem from="1756468193300" duration="2467000" />
-      <workItem from="1756671457377" duration="5162000" />
+      <workItem from="1756671457377" duration="6652000" />
     </task>
     <task id="LOCAL-00001" summary="feat: migrate to files field, omit media items o2m, update sources to links">
       <option name="closed" value="true" />
@@ -100,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756675203127</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix: update mobile cover image position about page">
+      <option name="closed" value="true" />
+      <created>1756676740231</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756676740231</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +132,7 @@
     <MESSAGE value="feat: migrate to files field, omit media items o2m, update sources to links" />
     <MESSAGE value="fix: remove max height for book content on mobile" />
     <MESSAGE value="fix: update gallery pattern, remove container fixed width" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: update gallery pattern, remove container fixed width" />
+    <MESSAGE value="fix: update mobile cover image position about page" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: update mobile cover image position about page" />
   </component>
 </project>

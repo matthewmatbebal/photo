@@ -16,7 +16,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
 
   return (
     <PageLayout>
-      <AboutDetailPage about={about} />
+      <AboutDetailPage about={about} locale={locale} /> {/* CHANGED */}
     </PageLayout>
   );
 }

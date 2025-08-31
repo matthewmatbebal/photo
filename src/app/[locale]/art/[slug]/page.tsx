@@ -1,5 +1,3 @@
-//src/app/[locale]/art/[slug]/page.tsx
-
 import { notFound } from "next/navigation";
 import PageLayout from "@/components/Layout/PageLayout";
 import WorkDetailPage from "@/components/WorkDetail/WorkDetailPage";
@@ -17,7 +15,7 @@ export default async function WorkPage({ params }: WorkPageProps) {
 
   return (
     <PageLayout>
-      <WorkDetailPage work={work} />
+      <WorkDetailPage work={work} locale={locale} />
     </PageLayout>
   );
 }

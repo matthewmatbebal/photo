@@ -1,15 +1,14 @@
-// src/components/About/AboutDetailPage.tsx
-"use client";
-
 import { getImageUrl } from "@/utils/images";
-import MediaSlider from "@/components/MediaSlider/MediaSlider";
 import styles from "./AboutDetailPage.module.sass";
 import { LocalizedAbout } from "@/types/about";
 import { DirectusFileMinimal } from "@/types/file";
-import { useTranslations } from "@/lib/translations";
+import { getTranslation } from "@/lib/translations";
+import type { Locale } from "@/lib/locale";
+import MediaBlock from "@/components/MediaBlock/MediaBlock";
 
 interface Props {
   about: LocalizedAbout;
+  locale: Locale;
 }
 
 function getCoverUrl(id: string | null): string | undefined {
@@ -24,16 +23,17 @@ function getAlt(file: DirectusFileMinimal | null): string {
   return file?.title ?? "";
 }
 
-export default function AboutDetailPage({ about }: Props) {
-  const t = useTranslations();
-
+export default function AboutDetailPage({ about, locale }: Props) {
   const coverSrc = getCoverUrl(about.cover_image);
   const media = about.media_items ?? [];
   const [firstImage, secondImage] = media;
 
+  const linksLabel = getTranslation("links", locale);
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
+        {/* Мобильная колонка */}
         <div className={styles.mobileLayout}>
           {coverSrc && (
             <div className={styles.coverBlock}>
@@ -54,7 +54,7 @@ export default function AboutDetailPage({ about }: Props) {
 
           {media.length > 0 && (
             <div className={styles.sliderWrap}>
-              <MediaSlider items={media} />
+              <MediaBlock items={media} />
             </div>
           )}
 
@@ -67,7 +67,8 @@ export default function AboutDetailPage({ about }: Props) {
 
           {about.links && about.links.length > 0 && (
             <div className={styles.sourcesSection}>
-              <div className={styles.sourcesTitle}>{t.links()}</div>
+              <div className={styles.sourcesTitle}>{linksLabel}</div>{" "}
+              {/* CHANGED */}
               <ul className={styles.sourcesList}>
                 {about.links.map((link) => (
                   <li key={link.id} className={styles.sourceItem}>
@@ -96,7 +97,6 @@ export default function AboutDetailPage({ about }: Props) {
                   className={styles.image}
                   loading="lazy"
                 />
-                {/* В качестве подписи используем description файла */}
                 {firstImage.description && (
                   <p className={styles.caption}>{firstImage.description}</p>
                 )}
@@ -105,7 +105,8 @@ export default function AboutDetailPage({ about }: Props) {
 
             {about.links && about.links.length > 0 && (
               <div className={styles.sourcesSection}>
-                <div className={styles.sourcesTitle}>{t.links()}</div>
+                <div className={styles.sourcesTitle}>{linksLabel}</div>{" "}
+                {/* CHANGED */}
                 <div className={styles.sourcesList}>
                   {about.links.map((link) => (
                     <div key={link.id} className={styles.sourceItem}>

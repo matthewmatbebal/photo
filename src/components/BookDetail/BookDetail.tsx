@@ -1,7 +1,3 @@
-// src/components/BookDetail/BookDetail.tsx
-"use client";
-
-import React from "react";
 import styles from "./BookDetail.module.sass";
 import { getImageUrl } from "@/utils/images";
 import { LocalizedBook } from "@/types/book";
@@ -28,6 +24,7 @@ export function BookDetailPage({ book }: BookDetailPageProps) {
               src={imageUrl}
               alt={book.title}
               className={styles.coverImage}
+              loading="lazy"
             />
           ) : (
             <div className={styles.coverPlaceholder}>
