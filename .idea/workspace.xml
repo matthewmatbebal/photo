@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a02699f1-115d-42ad-9705-63a24138c6d5" name="Changes" comment="fix: move pages to ssr">
+    <list default="true" id="a02699f1-115d-42ad-9705-63a24138c6d5" name="Changes" comment="fix: update about styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/AboutDetailPage.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutDetailPage.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/AboutDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutDetailPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gallery/Gallery.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gallery/Gallery.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gallery/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gallery/Gallery.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <updated>1756129171388</updated>
       <workItem from="1756129172494" duration="3464000" />
       <workItem from="1756468193300" duration="2467000" />
-      <workItem from="1756671457377" duration="7589000" />
+      <workItem from="1756671457377" duration="8075000" />
     </task>
     <task id="LOCAL-00001" summary="feat: migrate to files field, omit media items o2m, update sources to links">
       <option name="closed" value="true" />
@@ -125,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756678481744</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix: update about styles">
+      <option name="closed" value="true" />
+      <created>1756679428490</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756679428491</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +147,7 @@
     <MESSAGE value="fix: update gallery pattern, remove container fixed width" />
     <MESSAGE value="fix: update mobile cover image position about page" />
     <MESSAGE value="fix: move pages to ssr" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: move pages to ssr" />
+    <MESSAGE value="fix: update about styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: update about styles" />
   </component>
 </project>

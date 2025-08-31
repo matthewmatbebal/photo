@@ -103,9 +103,6 @@ export default function Gallery({ books }: GalleryProps) {
         <div className={styles.info}>
           <span className={styles.date}>{dateText}</span>
           <span className={styles.title}>{title}</span>
-          {!work.isTranslated && (
-            <span className={styles.fallbackNote}>EN</span>
-          )}
         </div>
       </div>
     );
@@ -150,7 +147,6 @@ export default function Gallery({ books }: GalleryProps) {
               </div>
             );
           }
-          // ИЗМЕНЕНИЕ: Обработка новых типов строк с разными размерами картинок
           if (chunk.kind === "two-big-small") {
             return (
               <div key={`row-${rowIdx}`} className={styles.rowTwoBigSmall}>
