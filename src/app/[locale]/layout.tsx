@@ -1,4 +1,4 @@
-// src/app/[locale]/layout.tsx - ЕДИНСТВЕННЫЙ LAYOUT с html/body
+// src/app/[locale]/layout.tsx
 import "../globals.css";
 import Providers from "../providers";
 import { LocaleProvider } from "@/context/LocaleContext";

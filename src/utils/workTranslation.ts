@@ -7,7 +7,6 @@ export function withTranslation(
   work: Work,
   locale: Locale = DEFAULT_LOCALE,
 ): LocalizedWork {
-  // Если английский язык, используем базовые поля
   if (locale === DEFAULT_LOCALE) {
     return {
       ...work,
